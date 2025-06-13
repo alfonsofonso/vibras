@@ -1,0 +1,107 @@
+<!doctype html>
+
+<head>
+	<title>Vibras</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="lacss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<div class="container" >
+	
+	<div id="botContainer" width="99%">
+		<button id="botHeal"  onclick="initHeal();"  >Vibras</button>	
+		Cicles:<span id="ciclSpan"> 1 </span> 
+		
+	</div>
+
+	<div class="slidecontainer" >
+
+		<div id="inmunizingControls">
+
+			Alpha: <span id="duraSpan">5 </span>  
+			<div width="99%">
+				<input type="range" min="1"  max="100" value="5" class="slider" id="duraSli">
+			</div>
+				
+
+			Armonics: <span id="armoSpan">3 </span>  
+			<div width="99%">
+				<input type="range" min="1"  max="12" value="3" class="slider" id="armoSli">
+			</div>
+
+
+			Modo: <span id="modoSpan">1</span>
+			<div width="99%">	
+				<input type="range" min="0" max="31" value="1" class="slider" id="modoSli">
+			</div>
+
+
+			Estatura: <span id="baseSpan">locked</span> 
+			<div width="99%">	
+				<input type="range" min="80" max="220" value="170" class="slider" id="baseSli" disabled="true">
+			</div>
+
+			Solap: <span id="solaSpan">locked</span> 
+			<div width="99%">	
+				<input type="range" min="0" max="20" value="2" class="slider" id="solaSli" disabled="true">
+			</div>
+
+		</div>
+		<button id="info"  onclick="alerta()"  >i</button>	 
+		<img src="iconos/logovibra512.png" onclick="home()" id="logor"/>
+ 	</div>
+
+</div>
+
+<canvas id="micanvas"></canvas>
+
+
+
+<script src="lissajous-master/src/vendor/bufferLoader.js"></script>
+<script src="lissajous-master/src/vendor/recorder.js"></script>
+<script src="lissajous-master/src/vendor/recorderWorker.js"></script>
+<script src="lissajous-master/src/vendor/tuna.js"></script>
+<script src="lissajous-master/src/track.core.js"></script>
+<script src="lissajous-master/src/track.api.js"></script>
+<script src="lissajous-master/src/context.js"></script>
+<script src="lissajous-master/src/generators.js"></script>
+<script src="lissajous-master/src/group.js"></script>
+<script src="lissajous-master/src/track.effects.chorus.js"></script>
+<script src="lissajous-master/src/track.effects.delay.js"></script>
+<script src="lissajous-master/src/track.effects.distortion.js"></script>
+<script src="lissajous-master/src/track.effects.filter.js"></script>
+<script src="lissajous-master/src/track.effects.reverb.js"></script>
+<script src="lissajous-master/src/track.effects.tremolo.js"></script>
+<script src="lissajous-master/src/track.envelope.js"></script>
+<script src="lissajous-master/src/track.events.js"></script>
+<script src="lissajous-master/src/track.filter.js"></script>
+<script src="lissajous-master/src/track.oscillator.js"></script>
+<script src="lissajous-master/src/track.record.js"></script>
+<script src="lissajous-master/src/track.sampler.js"></script>
+<script src="lissajous-master/src/track.scheduler.js"></script>
+<script src="lissajous-master/src/track.sequencer.js"></script>
+<script src="lissajous-master/environment/extras.js"></script>
+
+<script src="juabascri/easeljs-NEXT.combined.js"></script>
+<script src="juabascri/tweenjs-NEXT.combined.js"></script>
+
+<script src="laJS/visual.js"></script>
+<script src="laJS/planets.js"></script>
+<script src="laJS/midi.js"></script>
+<script src="laJS/midimap.js"></script>
+<script src="laJS/parametros.js"></script>
+<script src="laJS/oido.js"></script>
+<script src="laJS/main.js"></script>
+
+<script src="juabascri/p5.js"></script>
+<script src="juabascri/p5.sound.js"></script>
+
+
+</body>
+</html>

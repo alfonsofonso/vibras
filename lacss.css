@@ -1,0 +1,215 @@
+body{
+	background-color: rgb(0, 0, 0);
+  color: #053a5f;
+  font-family: "Kode Mono", monospace;
+}
+
+.container{
+  position: absolute;
+  z-index: 1000;
+}
+#logor{
+  width: 20%;
+  right: 20px;
+  position: absolute;
+  z-index: 10000;
+  cursor:pointer;
+}
+
+@media (orientation:portrait) { 
+  button{font-size: 2em;}
+  body,div{font-size: 1.1em;
+    font-family: "Kode Mono", monospace;
+  }
+  
+  #showSliRain{
+    width: 4rem;
+  }
+  #showSli{
+    width: 4rem;
+  }
+
+
+  input[type=range] {
+    appearance: none;
+    margin: 10px 0;
+    width: 90%;
+    border: none;
+    background: transparent;
+    padding: .6em;
+
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  /***** Chrome, Safari, Opera, and Edge Chromium *****/
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: #5a5a5a5a;
+    height: 2em;
+    width: 100%;
+    border-radius: 3em;
+    border: none;
+    
+  }
+
+  /******** Firefox ********/
+  input[type="range"]::-moz-range-track {
+    background: #4c4c4c;
+    height: 4em;
+    width: 100%;
+    border-radius: 1em;
+  }
+
+  /***** Thumb Styles *****/
+  /***** Chrome, Safari, Opera, and Edge Chromium *****/
+  input[type="range"]::-webkit-slider-thumb  {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -1em; /* Centers thumb on the track */
+    background-color: #b8fe1e99;
+    height: 4em;
+    width: 3em;  
+    border-radius: .4em;  
+  }
+
+  input[type="range"]:disabled::-webkit-slider-thumb  {
+    background-color: #a3a3a399
+  }
+
+  /***** Thumb Styles *****/
+  /***** Firefox *****/
+  input[type="range"]::-moz-range-thumb {
+      border: none; /*Removes extra border that FF applies*/
+      border-radius: 0; /*Removes default border-radius that FF applies*/
+      background-color: #88888888;
+      height: 3em;
+      width: 2em;
+      border-radius: .4em; 
+  }
+
+  /***** Focus Styles *****/
+  /* Removes default focus */
+  input[type="range"]:focus {
+    outline: none;
+  }
+ 
+  /***** Chrome, Safari, Opera, and Edge Chromium *****/
+  input[type="range"]:focus::-webkit-slider-thumb {
+    border: 1px solid #053a5f;
+    outline: 3px solid #053a5f;
+    outline-offset: 0.125em;
+ 
+
+  }
+
+  /******** Firefox ********/
+  input[type="range"]:focus::-moz-range-thumb {
+    border: 1px solid #053a5f;
+    outline: 3px solid #053a5f;
+    outline-offset: 0.125em;     
+  }
+
+}
+
+@media (orientation:landscape) { 
+  button{font-size: 3em;
+    font-family: "Kode Mono", monospace;
+  }
+  #showSli{
+    width: 2em
+  }
+  #showSliRain{
+    width: 2em;
+  }
+}
+
+#rainControls{
+  padding: 10px;
+  display: none;
+}
+#inmunizingControls{
+  padding: 10px;
+}
+
+
+button{
+	padding: 20px;
+  color: rgba(10,10,256);
+	border-radius: 2em;
+	background-color: rgba(20,20,100,.6);
+	left: 3%;
+  border-color: rgba(20,20,256,1);
+  user-select: none;
+  transition-duration: 0.2s;
+  outline: none;
+  font-family: "Kode Mono", monospace;
+}
+
+
+#defaultCanvas0{
+  position: absolute;
+  top:0;
+  background-color: rgba(0,0,0,0);
+
+}
+#miCanvas{
+  position: absolute;
+}
+
+
+
+#milink{
+  position: absolute;
+  font: Verdana;
+  font-family: Verdana; 
+  right:2%;
+  top: 10px;
+  color: rgb(10,10,256);
+  font-size:1.3em;
+  z-index: 1100;
+}
+
+.slidecontainer{
+  padding-top: 1em;
+  color: rgb(10,10,256);
+
+}
+
+
+#ranura{
+ border-radius: 2px;
+ border: rgb(141, 255, 10);
+ position: absolute;
+ width: 20%;
+ right: 10%;
+z-index: 311111;
+}
+#ranuritạ{
+  position: absolute;
+z-index: 311113;
+}
+#raform{
+  position: absolute;
+ width: 20%;
+ right: 10%;
+ z-index: 311112;
+}
+
+#botContainer{
+  left: 4%;
+  width: 99%;
+  display: inline;
+  position: relative;
+}
+
+#ciclSpan{
+font-size: 0.8em;
+color:blue
+}
+
+#info{
+  font-size: 1em;
+  right: 3%;
+}
